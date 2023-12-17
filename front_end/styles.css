@@ -1,0 +1,675 @@
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+}
+
+/* Nav Bar */
+
+nav {
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    background-color: #eee;
+    text-decoration: none;
+    color: #26466f;
+    font-size: 1.4rem;
+    padding: 20px 15px;
+
+}
+
+nav a:nth-child(6) {
+    margin-right: auto;
+}
+
+nav a.cart {
+    padding: 0 5px 0 0;
+}
+
+nav a.cart img {
+    height: 35px;
+    
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a:not(:nth-child(7)):hover{
+    background-color: #26466f;
+    color: #fff;
+}
+
+.dropdown a {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.dropdownAhidden {
+    display: none;
+}
+
+/* Home Slogan */
+
+div.slogan {
+    background-color: #26466f;
+    display: flex;
+    height: 550px;
+}
+
+div.slogan img{
+    display: flex;
+    margin-left: auto;
+    opacity: 75%;
+    height: 600px;
+}
+
+div.slogan div.sloganText {
+    color: white;
+}
+
+div.slogan div.sloganText div.sloganMain{
+    font-size: 5rem;
+    margin-left: 150px;
+    margin-top: 65px;
+    /* font-family: monospace; */
+}
+
+div.slogan div.sloganText div.sloganAfter{
+    font-size: 1.7rem;
+    margin: 30px 150px 0 ;
+}
+
+div.slogan div.sloganText button{
+    margin: 42px 0  0 180px;
+    color: #26466f;
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    box-shadow: 4px 4px 5px black;
+    border: none;
+}
+
+div.slogan div.sloganText button:hover{
+    color: #26466f;
+    background-color: white;
+    padding: 10px 6.5px;
+    font-weight: bold;
+}
+
+/* Home Content */
+
+div.homeContent {
+    margin: 90px 50px;
+}
+
+div.homeContent p{
+    font-size: 1.5rem;
+}
+
+div.homeContent h1{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+/* Contacts */
+
+div.contacts {
+    background-color: #26466f;
+    display: flex;
+}
+
+
+div.contacts div.contactsText {
+    color: white;
+}
+
+div.contacts div.contactsText div.contactsMain{
+    font-size: 7rem;
+    margin-left: 150px;
+    margin-top: 65px;
+    /* font-family: monospace; */
+}
+
+div.contacts div.contactsText div.contactsAfter{
+    font-size: 1.5rem;
+    margin: 30px 150px 100px ;
+    max-width: 70%;
+}
+
+div.contactsMainInfo {
+    /* margin: 150px 0px 120px 150px; */
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+div.contactsMainInfo div.contactsInfo img {
+    height: 70px
+}
+
+div.contactsMainInfo>div{
+    border: 3px solid #26466f;
+    width: 370px;
+    height: 450px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.phoneIcon{
+    flex: 1 1 0;
+    background-color: #26466f;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contactName {
+    /* margin: 30px 0 0 0; */
+    font-size: 2rem;
+    flex: 2 1 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.contactName h3{
+    margin-bottom: 20px;
+    color: #26466f;
+    font-size: 2.7rem;
+}
+div.contactNr {
+    /* margin: 15px 0 0 0; */
+    font-size: 1.7rem;
+}
+
+/* About */
+
+
+div.aboutContainer {
+    width: 100%;
+    margin: auto;
+}
+
+div.aboutContainer div.aboutRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.aboutContainer div.aboutWhat {
+    text-align: center;
+    width: 40%;
+    padding: 70px 15px 90px;
+    font-size: 4.5rem;
+    color: #26466f;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+div.aboutContainer div.aboutInfo {
+    text-align: center;
+    width: 60%;
+    padding: 70px 15px 90px;
+    font-size: 1.65rem;
+    font-family: sans-serif;
+}
+
+
+/* Footer */
+
+footer.footerContent {
+    background-color: #26466f;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+footer.footerContent img{
+    width: 45px;
+    margin: 30px 15px;
+}
+
+footer.footerContent div.socialsText {
+    font-size: 1.5rem;
+}
+
+
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    background-color: #26466f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 1;
+    color: white;
+  }
+
+.dropdown-content.responsive{
+    display: block;
+  }
+
+  .dropdown-content.responsive a{
+    display: block;
+    float: none;
+    padding: 12px 17px;
+    margin: 0;
+  }
+  
+
+  /* Calculator */
+
+.calcContainer {
+    display: flex;
+    padding-left: 10%;
+}
+
+.tableBox {
+    padding-top: 15px;
+    padding-left: 10%;
+}
+
+.tableBox h2 {
+    font-size: 2em;
+}
+
+.resistorInfoContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.resistorInfoContainer p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.resistorInfoContainer h1, .resistorInfoContainer h2 {
+    margin-bottom: 15px;
+    color: #26466f;
+}
+
+.resistorInfoContainer img {
+    padding: 15px;
+}
+
+div.ringsNr {
+        display: flex;
+  }
+
+.ringsLabel {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #26466f;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+.labelclass {
+    width: 200px;
+    min-height: 35px;
+    background: #cedff3;
+    border-radius: 3px;
+    border: 2px solid #26466f;
+    outline: none;
+    padding: 0 10px;
+    /* width: 100%; */
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 5px 4px 3px 0px rgba(0,0,0,0.2);
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+.labelclass option {
+    font-size: 18px;
+  }
+
+.calculatorContent {
+    padding-left: 35px;
+    margin: 30px 10px 10px 15px;
+    box-shadow: 0px 0px 5px 3px rgb(156,141,141);
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 750px;
+    background-color: #eee;
+  }
+
+.filler {
+    height: 500px;
+ }
+
+.findButton, .calculateButton {
+    margin: 6px 0 6px 0;
+    padding: 5px 7px;
+    background-color: #26466f;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    border: 1px solid #26466f;
+ }
+
+.findButton:hover, .calculateButton:hover {
+    cursor: pointer;
+    filter: brightness(115%);
+ }
+
+ form label {
+    width: 100px;
+ } 
+
+ div .photoSize img {
+    width: 120px;
+    height: 100px;
+ }
+
+ div .photoSize img {
+    width: 120px;
+    height: 100px;
+ }
+
+.calculatorBox {
+    display: flex;
+}
+
+.calculatorColorsBox {
+    margin-left: 85px;
+    position: relative;
+}
+.calculatorColorsBox img{
+    max-width: 250px;
+    overflow: clip;
+    z-index: 1;
+}
+
+.band{
+    position: absolute;
+    z-index: 2;
+}
+
+.firstband {
+    top: 2px;
+    left: 22px;
+    width: 14px;
+    height: 58px;
+    background-color: red;
+}
+
+.secondband {
+    top: 10px;
+    left: 60px;
+    width: 14px;
+    height: 41px;
+    background-color: blue;
+}
+
+.thirdband {
+    /* display: none; */
+    top: 10px;
+    left: 90px;
+    width: 14px;
+    height: 41px;
+    background-color: yellow;
+}
+
+.fourthband {
+    top: 10px;
+    left: 120px;
+    width: 14px;
+    height: 41px;
+    background-color: green;
+}
+
+.fifthband {
+    /* display: none; */
+    top: 10px;
+    right: 60px;
+    width: 14px;
+    height: 41px;
+    background-color: purple;
+}
+
+.sixthband {
+    top: 2px;
+    right: 22px;
+    width: 14px;
+    height: 58px;
+    background-color: orange;
+}
+
+.resultsText {
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 80px;
+    font-weight: 600;
+}
+
+.resultsText p {
+    margin: 20px 0;
+}
+
+.ringsNr label{
+    font-size: 14px;
+    color: #26466f;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+.ringsNr input{
+    margin-bottom: 20px;
+}
+.hiddenband {
+    display: none;
+}
+/* Log in */
+
+div.whole-login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: black;
+    background: url('../media/loginbg.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 8px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 4px 1px rgba(255,255,255,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box h2, .register-box h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-20%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.login-submit {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.register-option {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-option p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-option p a:hover {
+    text-decoration: underline;
+}
+
+
+
+div.whole-register-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: black;
+    background: url('../media/loginbg.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.register-box {
+    position: relative;
+    width: 400px;
+    height: 800px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 8px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 4px 1px rgba(255,255,255,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colors */
+
+.black {
+    background-color: black;
+}
+
+.brown {
+    background-color: #663300;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: rgb(151, 10, 156);
+}
+
+.gray {
+    background-color: gray;
+}
+
+.white {
+    background-color: white;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.gold {
+    background-color: rgb(161, 119, 4);
+}
